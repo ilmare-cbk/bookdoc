@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imageview_question_user"
+                    android:src="@drawable/profile"/>
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="9"
+                    android:layout_marginLeft="8dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textview_question_name"
+                        android:text="김고은"
+                        android:textSize="13sp"
+                        android:textColor="@color/defaultFontColor"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/textview_question_date"
+                        android:layout_height="wrap_content"
+                        android:text="10월 21일"
+                        android:textSize="11sp"
+                        android:textColor="@color/defaultFontColor"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageview_question_editbtn"
+                    android:src="@drawable/more_black_24dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="인문학 전공자인데 회사에서 다음주까지 기획서를 써야해요. 혹시 기획서 슬 때 참고할 좋은 책 있을까요?"
+                android:textSize="13sp"
+                android:textColor="@color/request_content"
+                android:id="@+id/textview_question_description"
+                android:lineSpacingExtra="19px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_question_prescribed"
+                android:layout_marginRight="@dimen/activity_margin"
+                android:text="처방수 2개"
+                android:textSize="10sp"
+                android:textColor="@color/count"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/defalutBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/request_prescription_wonder"
+                android:background="?attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wonder"
+                    android:id="@+id/request_prescription_wonder_img"
+                    android:layout_marginRight="4dp"/>
+                <font.setfont.NotoRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="저도 궁금해요"
+                    android:textSize="11sp"
+                    android:textColor="@color/request_btns"
+                    android:layout_marginRight="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview_question_watched"
+                    android:textSize="11sp"
+                    android:textColor="@color/request_btns"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/request_prescription_wonder_fill"
+                android:background="?attr/selectableItemBackground"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wonder_color"
+                    android:id="@+id/request_prescription_wonder_img_fill"
+                    android:layout_marginRight="4dp"/>
+                <font.setfont.NotoRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="저도 궁금해요"
+                    android:textSize="11sp"
+                    android:textColor="@color/request_btns"
+                    android:layout_marginRight="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview_question_watched_fill"
+                    android:textSize="11sp"
+                    android:textColor="@color/request_btns"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/request_prescription_post_prescription"
+                android:background="?attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/comment"
+                    android:layout_marginRight="4dp" />
+                <font.setfont.NotoRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:text="처방하기"
+                    android:textColor="@color/request_btns"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

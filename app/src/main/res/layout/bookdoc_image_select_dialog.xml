@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="96dp"
+        android:orientation="vertical">
+        <font.setfont.NotoLTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="갤러리에서 선택"
+            android:gravity="center"
+            android:textColor="@color/defaultFontColor"
+            android:textSize="15sp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/bookdoc_image_select_gallery"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"/>
+        <font.setfont.NotoLTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="북닥에서 선택"
+            android:gravity="center"
+            android:textColor="@color/defaultFontColor"
+            android:textSize="15sp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/bookdoc_image_select_bookdoc"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bookdoc_profile_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kr.bookdoc.bookdoc.BookdocProfileSettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/bookdoc_profile_setting_toolbar">
+        <font.setfont.NotoSansRTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필편집"
+            android:textColor="@color/defaultFontColor"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:id="@+id/bookdoc_profile_setting_tv"/>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="22dp"
+                android:layout_gravity="center">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_default"
+                    android:layout_gravity="center"
+                    android:id="@+id/bookdoc_profile_setting_img"/>
+            </LinearLayout>
+
+            <font.setfont.NotoLEditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:hint="닉네임"
+                android:inputType="text"
+                android:nextFocusDown="@+id/bookdoc_profile_setting_introduce"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:theme="@style/BookdocEditTextTheme"
+                android:id="@+id/bookdoc_profile_setting_username"/>
+
+            <font.setfont.NotoLEditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/bookdoc_profile_setting_introduce"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="상세 이력을 작성하세요"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:theme="@style/BookdocEditTextTheme" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

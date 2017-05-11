@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+        <com.kr.bookdoc.bookdoc.bookdocutils.CustomImageView
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/book1"
+            android:id="@+id/bookdoc_book_search_item_book_img"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/defaultFontColor"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/bookdoc_book_search_book_title"
+                android:text="배민다움"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/defaultFontColor"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/bookdoc_book_search_book_author"
+                android:text="작가 홍성태"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/defaultFontColor"
+                android:textSize="15sp"
+                android:id="@+id/bookdoc_book_search_book_publisher"
+                android:text="출판 북스톤"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"/>
+</LinearLayout>

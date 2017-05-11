@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/my_prescription_container"
+        >
+        <com.kr.bookdoc.bookdoc.bookdocutils.CustomImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_prescription_question_book_img"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingRight="@dimen/activity_margin">
+            <font.setfont.NotoDTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="세상보는 눈을 키우고 싶을 때, 세상을 바라보는 눈을 세상보는 눈을 키우고 싶을 때, 세상을 바라보는 눈을"
+                android:textColor="@color/defaultFontColor"
+                android:textSize="15sp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:id="@+id/my_prescription_title"/>
+            <font.setfont.NotoDTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="인물학적 상상과 발상을 과학을 통해 풀어가고 싶은 사람을 세상보는 눈을 키우고 싶을 때, 세상을 바라보는 눈을"
+                android:textColor="#898989"
+                android:textSize="13sp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:id="@+id/my_prescription_content"/>
+            <font.setfont.NotoDTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColor="#acacac"
+                android:textSize="11sp"
+                android:text="2016.10.20"
+                android:id="@+id/my_prescription_created_time"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

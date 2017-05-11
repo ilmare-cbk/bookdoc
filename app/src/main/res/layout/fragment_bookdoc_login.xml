@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/defalutBackground"
+    tools:context="com.kr.bookdoc.bookdoc.bookdocaccount.BookdocLoginFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/textview_fragment_login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login_email"
+            android:textColor="#363636"
+            android:textSize="17sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edit_userid"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="29dp"
+        android:hint="이메일 주소"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/defaultFontColor"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="16dp"
+        android:hint="비밀번호"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_find_password"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_gravity="right"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#363636"
+        android:visibility="gone"
+        android:background="@color/transparent"
+        android:text="비밀번호 찾기" />
+    <Button
+        android:id="@+id/btn_login"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_button_change"
+        android:textSize="15sp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
