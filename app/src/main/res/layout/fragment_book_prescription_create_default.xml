@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingTop="26dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="91dp">
+            <font.setfont.NotoSansLEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="제목을 입력해주세요"
+                android:background="@color/white"
+                android:textColorHint="#959595"
+                android:textSize="18sp"
+                android:textColor="@color/defaultFontColor"
+                android:id="@+id/bookdoc_create_prescription_default_question"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="18dp">
+                <font.setfont.NotoSansLTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12sp"
+                    android:textColor="#959595"
+                    android:id="@+id/bookdoc_create_prescription_default_tv"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/200"
+                    android:textSize="12sp"
+                    android:textColor="#959595"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <font.setfont.NanumLEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="내용입력"
+            android:textSize="15sp"
+            android:textColorHint="#959595"
+            android:textColor="@color/defaultFontColor"
+            android:background="@color/white"
+            android:id="@+id/bookdoc_create_prescription_default_edit"
+            android:maxLength="200"
+            android:gravity="start"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

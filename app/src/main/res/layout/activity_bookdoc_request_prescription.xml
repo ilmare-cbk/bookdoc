@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bookdoc_request_prescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kr.bookdoc.bookdoc.BookdocRequestPrescriptionActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:id="@+id/activity_bookdoc_request_prescription_toolbar">
+        
+        <font.setfont.NotoSansRTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="처방요청"
+            android:textColor="@color/defaultFontColor"
+            android:textSize="17sp"
+            android:layout_gravity="center"/>
+        
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginRight="@dimen/activity_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/profile_default"
+                    android:id="@+id/bookdoc_request_prescription_user_image"/>
+                <font.setfont.NotoSansRTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="책더쿠"
+                    android:textColor="@color/defaultFontColor"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/bookdoc_request_prescription_user_name"/>
+            </LinearLayout>
+            <font.setfont.NotoSansREditText
+                android:id="@+id/textview_create_question_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="처방받고 싶은 책에 대한 요청글을 작성하세요"
+                android:textColorHint="#b7b7b7"
+                android:textColor="@color/defaultFontColor"
+                android:textSize="14sp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

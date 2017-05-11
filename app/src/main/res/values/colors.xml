@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#252525</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="colorAccent">#04c582</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparentWhite">#80FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="defaultFontColor">#363636</color>
+    <color name="categoryTextColor">#959595</color>
+    <color name="categorySelectedTextColor">#04c582</color>
+    <color name="appBar">#252525</color>
+    <color name="defalutBackground">#edece7</color>
+    <color name="divider">#d7d7d7</color>
+    <color name="individer">#cccccc</color>
+    <color name="blur">#50000000</color>
+    <color name="request_content">#555555</color>
+    <color name="count">#adadad</color>
+    <color name="request_btns">#636363</color>
+    <color name="blurMoreDark">#91000000</color>
+</resources>

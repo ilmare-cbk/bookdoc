@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/defalutBackground">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="12dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/all_1_1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/category_btn_1"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selfimprovement_2_1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/category_btn_2"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/liberal_3_1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/category_btn_3"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/history_4_1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/category_btn_4"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/politics_5_1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/category_btn_5"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/economic_6_1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/category_btn_6"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/it_7_1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/category_btn_7"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/art_8_1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/category_btn_8"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/book_prescription_swipe_refresh_layout">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/book_prescription_item_container_rv">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_prescription_create_fab"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_margin"
+        android:src="@drawable/write"
+        android:visibility="visible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_prescription_top_fb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_margin"
+        android:src="@drawable/top"
+        android:visibility="gone"
+        app:backgroundTint="@color/white"
+        android:scaleType="center"/>
+
+</RelativeLayout>

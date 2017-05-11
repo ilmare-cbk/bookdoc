@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defalutBackground"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_above="@+id/bookdoc_login_main_slide"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:id="@+id/bookdoc_login_main_slide"
+        android:layout_above="@+id/btn_signup_facebook">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide1"
+            android:layout_margin="5dp"
+            android:id="@+id/bookdoc_login_slide1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide2"
+            android:layout_margin="5dp"
+            android:id="@+id/bookdoc_login_slide2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide2"
+            android:layout_margin="5dp"
+            android:id="@+id/bookdoc_login_slide3"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_signup_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/login_facebook"
+        android:textSize="15sp"
+        android:layout_above="@+id/btn_signup_email"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_signup_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/login_email"
+        android:textSize="15dp"
+        android:layout_above="@+id/btn_login_main"
+        android:layout_centerHorizontal="true"/>
+
+    <font.setfont.NotoLButton
+        android:id="@+id/btn_login_main"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="#00ff0000"
+        android:text="로그인"
+        android:textColor="#353535"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

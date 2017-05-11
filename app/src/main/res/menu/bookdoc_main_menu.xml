@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/search"
+        app:showAsAction="always"
+        android:title="@string/book_prescription_search"
+        android:id="@+id/search_book_prescription"/>
+    <item
+        android:icon="@drawable/my"
+        app:showAsAction="always"
+        android:title="@string/my_book"
+        android:id="@+id/mybook"/>
+
+</menu>

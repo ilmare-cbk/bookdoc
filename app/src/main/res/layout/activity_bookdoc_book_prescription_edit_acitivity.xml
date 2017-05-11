@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bookdoc_book_prescription_edit_acitivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/defalutBackground"
+    tools:context="com.kr.bookdoc.bookdoc.BookdocBookPrescriptionEditAcitivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:id="@+id/bookdoc_edit_prescription_toolbar">
+        <font.setfont.NotoSansRTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="책 처방 컨텐츠 수정"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/defaultFontColor"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="42dp"
+        android:id="@+id/bookdoc_edit_prescription_vp"/>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bookdoc_main_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kr.bookdoc.bookdoc.BookdocMainSearchActivity">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="검색어를 입력해 주세요"
+        android:textColorHint="#b7b7b7"
+        android:textColor="@color/defaultFontColor"
+        android:drawableLeft="@drawable/book_search"
+        android:textSize="17sp"
+        android:background="@color/transparent"
+        android:paddingLeft="@dimen/activity_margin"
+        android:drawablePadding="@dimen/activity_margin"
+        android:completionThreshold="1"
+        android:id="@+id/bookdoc_main_search_actv"
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bookdoc_main_search_rv"
+        android:background="@color/defalutBackground"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

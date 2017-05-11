@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bookdoc_book_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.kr.bookdoc.bookdoc.BookdocBookSearchActivity">
+    <font.setfont.NotoSansLEditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="한줄 처방을 위한 도서를 검색하세요"
+        android:textColorHint="#b7b7b7"
+        android:textColor="@color/defaultFontColor"
+        android:drawableLeft="@drawable/book_search"
+        android:background="@color/white"
+        android:textSize="17sp"
+        android:paddingLeft="@dimen/activity_margin"
+        android:drawablePadding="@dimen/activity_margin"
+        android:id="@+id/bookdoc_book_search_edit"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:elevation="2dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/bookdoc_book_search_rv"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

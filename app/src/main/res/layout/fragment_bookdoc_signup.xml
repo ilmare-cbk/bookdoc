@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/defalutBackground"
+    tools:context="com.kr.bookdoc.bookdoc.bookdocaccount.BookdocSignupFragment">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_signup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/textview_fragment_signup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login_signup"
+            android:textColor="#363636"
+            android:textSize="17dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edit_sign_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="29dp"
+        android:ems="20"
+        android:hint="이메일주소"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/edit_sign_password"
+        android:textSize="14dp" />
+
+
+    <EditText
+        android:id="@+id/edit_sign_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="16dp"
+        android:ems="20"
+        android:hint="비밀번호 (8자 이상)"
+        android:inputType="textPassword"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/edit_sign_password_match"
+        android:textSize="14dp" />
+
+
+    <EditText
+        android:id="@+id/edit_sign_password_match"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="16dp"
+        android:ems="20"
+        android:hint="비밀번호 확인"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/signup_button_change"
+        android:textSize="15dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

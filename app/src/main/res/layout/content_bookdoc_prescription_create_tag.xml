@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/textview_create_prescription_tag_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tagnine"
+        android:text="브랜드경영"
+        android:textColor="#898989"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:textSize="12sp"/>
+    <ImageView
+        android:id="@+id/imageview_create_prescription_tag_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tag_delete"/>
+
+
+</LinearLayout>
